@@ -1,0 +1,222 @@
+{
+ "nominal": {
+  "scenario": "none",
+  "writer": {
+   "state": "DONE",
+   "steps": 185,
+   "time_s": 531.9,
+   "distance_m": 106.4,
+   "coverage": 1.0,
+   "battery_left": 0.468,
+   "beacons_dropped": 22,
+   "beacons_left": 2,
+   "events_found": [
+    "fire",
+    "victim",
+    "blocked",
+    "victim",
+    "fire"
+   ],
+   "events_total": 5
+  },
+  "translation": {
+   "closure_error_m": 0.94,
+   "gyro_drift_deg_per_100m": 6.081,
+   "beacon_error_raw_mean_m": 0.201,
+   "beacon_error_raw_max_m": 0.696,
+   "beacon_error_corrected_mean_m": 0.13,
+   "beacon_error_corrected_max_m": 0.283,
+   "crc_rejected_copies": 0,
+   "packets_lost": 0,
+   "dump_bytes": 2435
+  },
+  "executor": {
+   "mode": "briefed",
+   "steps": 85,
+   "time_s": 206.6,
+   "distance_m": 41.3,
+   "success": true,
+   "reroutes": 0,
+   "dead_beacons": [],
+   "blocked_edges": [],
+   "target": 8,
+   "beacons_read": 13,
+   "relocalisations": 1
+  },
+  "link": {
+   "frames": 23,
+   "delivered": 23,
+   "attempts": 30,
+   "lost_data": 4,
+   "lost_ack": 3,
+   "deferred": 0,
+   "bytes": 844,
+   "airtime_s": 3.0
+  },
+  "total_time_s": 825.7
+ },
+ "seeds": [
+  {
+   "seed": 7,
+   "closure_error_m": 0.94,
+   "gyro_drift_deg_per_100m": 6.081,
+   "beacon_error_raw_mean_m": 0.201,
+   "beacon_error_raw_max_m": 0.696,
+   "beacon_error_corrected_mean_m": 0.13,
+   "beacon_error_corrected_max_m": 0.283,
+   "crc_rejected_copies": 0,
+   "packets_lost": 0,
+   "dump_bytes": 2435,
+   "coverage": 1.0,
+   "writer_time_s": 531.9,
+   "success": true,
+   "link_attempts": 30,
+   "link_frames": 23
+  },
+  {
+   "seed": 11,
+   "closure_error_m": 0.731,
+   "gyro_drift_deg_per_100m": 4.684,
+   "beacon_error_raw_mean_m": 0.33,
+   "beacon_error_raw_max_m": 0.614,
+   "beacon_error_corrected_mean_m": 0.292,
+   "beacon_error_corrected_max_m": 0.486,
+   "crc_rejected_copies": 2,
+   "packets_lost": 1,
+   "dump_bytes": 2435,
+   "coverage": 1.0,
+   "writer_time_s": 531.9,
+   "success": true,
+   "link_attempts": 29,
+   "link_frames": 23
+  },
+  {
+   "seed": 23,
+   "closure_error_m": 1.065,
+   "gyro_drift_deg_per_100m": 6.704,
+   "beacon_error_raw_mean_m": 0.232,
+   "beacon_error_raw_max_m": 0.884,
+   "beacon_error_corrected_mean_m": 0.178,
+   "beacon_error_corrected_max_m": 0.29,
+   "crc_rejected_copies": 2,
+   "packets_lost": 0,
+   "dump_bytes": 2435,
+   "coverage": 1.0,
+   "writer_time_s": 531.9,
+   "success": true,
+   "link_attempts": 27,
+   "link_frames": 23
+  },
+  {
+   "seed": 42,
+   "closure_error_m": 0.805,
+   "gyro_drift_deg_per_100m": 5.144,
+   "beacon_error_raw_mean_m": 0.273,
+   "beacon_error_raw_max_m": 0.477,
+   "beacon_error_corrected_mean_m": 0.255,
+   "beacon_error_corrected_max_m": 0.441,
+   "crc_rejected_copies": 1,
+   "packets_lost": 0,
+   "dump_bytes": 2435,
+   "coverage": 1.0,
+   "writer_time_s": 531.9,
+   "success": true,
+   "link_attempts": 29,
+   "link_frames": 23
+  },
+  {
+   "seed": 99,
+   "closure_error_m": 0.71,
+   "gyro_drift_deg_per_100m": 4.593,
+   "beacon_error_raw_mean_m": 0.207,
+   "beacon_error_raw_max_m": 0.553,
+   "beacon_error_corrected_mean_m": 0.122,
+   "beacon_error_corrected_max_m": 0.222,
+   "crc_rejected_copies": 0,
+   "packets_lost": 0,
+   "dump_bytes": 2435,
+   "coverage": 1.0,
+   "writer_time_s": 531.9,
+   "success": true,
+   "link_attempts": 28,
+   "link_frames": 23
+  }
+ ],
+ "seed_mean": {
+  "beacon_error_raw_mean_m": 0.249,
+  "beacon_error_raw_max_m": 0.645,
+  "beacon_error_corrected_mean_m": 0.195,
+  "beacon_error_corrected_max_m": 0.344,
+  "closure_error_m": 0.85
+ },
+ "failures": {
+  "none": {
+   "success": true,
+   "writer_state": "DONE",
+   "coverage": 1.0,
+   "executor_steps": 85,
+   "reroutes": 0,
+   "dead_beacons": [],
+   "mode": "briefed",
+   "total_time_min": 13.8,
+   "link": "23/23 frames, 30 tx"
+  },
+  "beacon": {
+   "success": true,
+   "writer_state": "DONE",
+   "coverage": 1.0,
+   "executor_steps": 101,
+   "reroutes": 1,
+   "dead_beacons": [
+    19
+   ],
+   "mode": "briefed",
+   "total_time_min": 14.6,
+   "link": "23/23 frames, 30 tx"
+  },
+  "block": {
+   "success": true,
+   "writer_state": "DONE",
+   "coverage": 1.0,
+   "executor_steps": 114,
+   "reroutes": 0,
+   "dead_beacons": [],
+   "mode": "briefed",
+   "total_time_min": 15.1,
+   "link": "24/24 frames, 32 tx"
+  },
+  "writer": {
+   "success": true,
+   "writer_state": "DEAD",
+   "coverage": 0.614,
+   "executor_steps": 88,
+   "reroutes": 0,
+   "dead_beacons": [],
+   "mode": "recovery",
+   "total_time_min": 19.2,
+   "link": "11/11 frames, 12 tx"
+  },
+  "link": {
+   "success": true,
+   "writer_state": "DONE",
+   "coverage": 1.0,
+   "executor_steps": 85,
+   "reroutes": 0,
+   "dead_beacons": [],
+   "mode": "briefed",
+   "total_time_min": 14.6,
+   "link": "23/23 frames, 64 tx"
+  },
+  "battery": {
+   "success": true,
+   "writer_state": "DONE",
+   "coverage": 0.434,
+   "executor_steps": 85,
+   "reroutes": 0,
+   "dead_beacons": [],
+   "mode": "briefed",
+   "total_time_min": 8.5,
+   "link": "18/18 frames, 21 tx"
+  }
+ }
+}
