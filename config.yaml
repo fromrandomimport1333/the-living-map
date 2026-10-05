@@ -1,0 +1,53 @@
+# The Living Map — scenario configuration
+seed: 7
+map_file: sim/maps/building.txt
+cell_m: 0.5                 # one grid cell = 0.5 m
+speed_mps: 0.2              # careful speed in a damaged building -> one cell = 2.5 s
+
+# Frame translation anchor (measured by the ONA outside the entrance)
+anchor:
+  lat0: 36.8000             # GPS of the entrance point (example site)
+  lon0: 10.1800
+  psi_deg: 270.0            # bearing of the robot +x axis (into the building), clockwise from North
+
+writer:
+  battery_steps: 400        # energy budget, in cell moves
+  return_margin: 1.3        # turn back when battery < margin * cost_to_exit + reserve
+  return_reserve: 15
+  beacon_stock: 24
+  event_reserve: 4          # beacons kept for events once the stock is low
+  breadcrumb_every_m: 3.0
+  lidar_range_m: 3.0
+  lidar_rays: 72
+  fire_temp_threshold_c: 60
+  victim_range_m: 2.0
+  odo_scale_error: 0.015    # odometry drift model
+  odo_gyro_bias_dps: 0.012  # heading error grows with time (cheap MEMS gyro, ~43 deg/h)
+  odo_noise_m: 0.01
+
+beacon:
+  radio_range_m: 5.0        # BLE broadcast range (line of sight)
+  near_range_m: 0.75        # "at the beacon" RSSI threshold
+  bit_error_packets: 0.04   # fraction of packets corrupted during the log dump
+
+link:                       # ONA <-> command post long-range link (LoRa SF7, 869.5 MHz)
+  loss: 0.10
+  max_payload: 51
+  airtime_s: 0.10
+  ack_airtime_s: 0.05
+  duty_gap_s: 1.0           # 10 % duty-cycle sub-band
+  latency_s: 0.3
+  max_retries: 8
+
+ona:
+  dump_time_s: 12
+  decision_time_s: 25       # commander thinking time
+  brief_time_s: 5
+  writer_timeout_s: 900     # declare the Writer lost after 15 min of silence
+
+executor:
+  lidar_range_m: 3.0
+  lidar_rays: 72
+  dead_beacon_patience: 8   # steps searching for a beacon that is silent
+  detour_factor: 3.0        # re-route when local path > factor * expected + 20 cells
+  odo_noise_m: 0.01
